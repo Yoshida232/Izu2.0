@@ -7,8 +7,8 @@
   "notification": false,
   "approval": false,
   "saveState": true,
-  "BOTNAME": "nayan-bot",
-  "PREFIX": "/",
+  "BOTNAME": "xio|izu",
+  "PREFIX": ",",
   "OPERATOR": [
     "100045695363800",
     "61564533745987"
