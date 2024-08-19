@@ -48,7 +48,7 @@ module.exports.run = async function({ api, event, Users }) {
   if (event.logMessageData.addedParticipants && Array.isArray(event.logMessageData.addedParticipants) && event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     //api.changeNickname(`𝗕𝗢𝗧 ${(!global.config.BOTNAME) ? "Buddy" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
 
-    let gifUrl = 'https://i.postimg.cc/SNQXkB0y/lv-0-20231018174834.gif';
+    let gifUrl = 'https://cdn.fbsbx.com/v/t59.2708-21/456208738_819884976924536_6739182574365834298_n.gif?_nc_cat=106&ccb=1-7&_nc_sid=cf94fc&_nc_ohc=KUX4NS6e0ZAQ7kNvgHDR13i&_nc_ht=cdn.fbsbx.com&oh=03_Q7cD1QHsBu38BEcbQFvs2GsrxEknkNNCufmGqGfRZLQ18k237g&oe=66C4DD1C';
 let gifPath = __dirname + '/Nayan/join/join.gif';
 
 axios.get(gifUrl, { responseType: 'arraybuffer' })
@@ -56,7 +56,7 @@ axios.get(gifUrl, { responseType: 'arraybuffer' })
     fs.writeFileSync(gifPath, response.data);
   if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     api.changeNickname(`[ ${global.config.PREFIX} ] • ➠${(!global.config.BOTNAME) ? "bot" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
-    return api.sendMessage("চলে এসেছি আমি পিচ্চি নয়ন তোমাদের মাঝে🤭!", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
+    return api.sendMessage("🧋Izumikas Husband Cursed Xio is Back!🎐", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\n🧋Accepted By Cursed Xio🎐☘️
 <------------------------------>  
 BOT CONNECTED SUCCESFUL !!! 
 
@@ -66,15 +66,15 @@ APPROVAL ALLOW IN THIS GROUP!!!
 <------------------------------>
 AND FOR ANY COMPLAINTS OR CONTACT BOT OPERATOR 
 
-DEVELOPER :Mohammad Nayan 
+ADMIN FACEBOOK : 🧋CURSED XIO & 🎐AXONIST YT
 
 🟣Facebook Account Link: 
 
-https://www.facebook.com/www.xnxx.com169
+https://www.facebook.com/classic.ranking.37
 
-🔵WHATSAPP NUMBER: wa.me/+8801615298449
+🔵 CREDIT :🧋 SAI MOON YOSHIDA🎐
 
-🟢SUPPORT EMAIL: www.mdmnnm2004@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
+🟢 MESSENGER GROUP : https://m.me/j/AbZHdj67j0Zx_fLb/`, attachment: fs.createReadStream(gifPath)}, threadID));
   }})
 .catch(error => {
     console.error(error);
